@@ -7,18 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2312EB22C6C006100107EA5 /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = E2312EB12C6C006100107EA5 /* Starscream */; };
+		E23E0C8D2C648B8D008FBD3E /* OpenAITTS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23E0C8C2C648B8D008FBD3E /* OpenAITTS.swift */; };
+		E23E0C8F2C6494BE008FBD3E /* AudioSpeechParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23E0C8E2C6494BE008FBD3E /* AudioSpeechParameters.swift */; };
+		E23E0C942C6965C3008FBD3E /* WhisperKit in Frameworks */ = {isa = PBXBuildFile; productRef = E23E0C932C6965C3008FBD3E /* WhisperKit */; };
+		E23E0C972C697733008FBD3E /* SwiftWhisper in Frameworks */ = {isa = PBXBuildFile; productRef = E23E0C962C697733008FBD3E /* SwiftWhisper */; };
+		E23E0CA42C69B5E8008FBD3E /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = E23E0CA32C69B5E8008FBD3E /* AudioKit */; };
 		E25B2E252C6328330060332E /* LeemaAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25B2E242C6328330060332E /* LeemaAIApp.swift */; };
 		E25B2E272C6328330060332E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25B2E262C6328330060332E /* ContentView.swift */; };
 		E25B2E292C6328350060332E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E25B2E282C6328350060332E /* Assets.xcassets */; };
 		E25B2E2C2C6328350060332E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E25B2E2B2C6328350060332E /* Preview Assets.xcassets */; };
+		E25B2E342C6329A50060332E /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25B2E332C6329A50060332E /* Speech.framework */; };
+		E25B2E372C632B430060332E /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25B2E362C632B430060332E /* SpeechRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E23E0C8C2C648B8D008FBD3E /* OpenAITTS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAITTS.swift; sourceTree = "<group>"; };
+		E23E0C8E2C6494BE008FBD3E /* AudioSpeechParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSpeechParameters.swift; sourceTree = "<group>"; };
 		E25B2E212C6328330060332E /* LeemaAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeemaAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25B2E242C6328330060332E /* LeemaAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeemaAIApp.swift; sourceTree = "<group>"; };
 		E25B2E262C6328330060332E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E25B2E282C6328350060332E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E25B2E2B2C6328350060332E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E25B2E332C6329A50060332E /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
+		E25B2E352C632A480060332E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E25B2E362C632B430060332E /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +39,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E23E0C942C6965C3008FBD3E /* WhisperKit in Frameworks */,
+				E25B2E342C6329A50060332E /* Speech.framework in Frameworks */,
+				E23E0CA42C69B5E8008FBD3E /* AudioKit in Frameworks */,
+				E2312EB22C6C006100107EA5 /* Starscream in Frameworks */,
+				E23E0C972C697733008FBD3E /* SwiftWhisper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +55,7 @@
 			children = (
 				E25B2E232C6328330060332E /* LeemaAI */,
 				E25B2E222C6328330060332E /* Products */,
+				E25B2E322C6329A50060332E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,10 +70,14 @@
 		E25B2E232C6328330060332E /* LeemaAI */ = {
 			isa = PBXGroup;
 			children = (
+				E25B2E352C632A480060332E /* Info.plist */,
 				E25B2E242C6328330060332E /* LeemaAIApp.swift */,
 				E25B2E262C6328330060332E /* ContentView.swift */,
 				E25B2E282C6328350060332E /* Assets.xcassets */,
 				E25B2E2A2C6328350060332E /* Preview Content */,
+				E25B2E362C632B430060332E /* SpeechRecognizer.swift */,
+				E23E0C8C2C648B8D008FBD3E /* OpenAITTS.swift */,
+				E23E0C8E2C6494BE008FBD3E /* AudioSpeechParameters.swift */,
 			);
 			path = LeemaAI;
 			sourceTree = "<group>";
@@ -65,6 +88,14 @@
 				E25B2E2B2C6328350060332E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E25B2E322C6329A50060332E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E25B2E332C6329A50060332E /* Speech.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +114,12 @@
 			dependencies = (
 			);
 			name = LeemaAI;
+			packageProductDependencies = (
+				E23E0C932C6965C3008FBD3E /* WhisperKit */,
+				E23E0C962C697733008FBD3E /* SwiftWhisper */,
+				E23E0CA32C69B5E8008FBD3E /* AudioKit */,
+				E2312EB12C6C006100107EA5 /* Starscream */,
+			);
 			productName = LeemaAI;
 			productReference = E25B2E212C6328330060332E /* LeemaAI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +148,12 @@
 				Base,
 			);
 			mainGroup = E25B2E182C6328330060332E;
+			packageReferences = (
+				E23E0C922C6965C3008FBD3E /* XCRemoteSwiftPackageReference "whisperkit" */,
+				E23E0C952C697733008FBD3E /* XCRemoteSwiftPackageReference "SwiftWhisper" */,
+				E23E0CA22C69B5E8008FBD3E /* XCRemoteSwiftPackageReference "AudioKit" */,
+				E2312EB02C6C006100107EA5 /* XCRemoteSwiftPackageReference "Starscream" */,
+			);
 			productRefGroup = E25B2E222C6328330060332E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +181,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E25B2E272C6328330060332E /* ContentView.swift in Sources */,
+				E23E0C8F2C6494BE008FBD3E /* AudioSpeechParameters.swift in Sources */,
 				E25B2E252C6328330060332E /* LeemaAIApp.swift in Sources */,
+				E23E0C8D2C648B8D008FBD3E /* OpenAITTS.swift in Sources */,
+				E25B2E372C632B430060332E /* SpeechRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,13 +318,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LeemaAI/Preview Content\"";
+				DEVELOPMENT_TEAM = JCSJD7845Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LeemaAI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,13 +349,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LeemaAI/Preview Content\"";
+				DEVELOPMENT_TEAM = JCSJD7845Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LeemaAI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,6 +394,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E2312EB02C6C006100107EA5 /* XCRemoteSwiftPackageReference "Starscream" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/daltoniam/Starscream.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.0.4;
+			};
+		};
+		E23E0C922C6965C3008FBD3E /* XCRemoteSwiftPackageReference "whisperkit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/argmaxinc/whisperkit.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		E23E0C952C697733008FBD3E /* XCRemoteSwiftPackageReference "SwiftWhisper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exPHAT/SwiftWhisper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		E23E0CA22C69B5E8008FBD3E /* XCRemoteSwiftPackageReference "AudioKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AudioKit/AudioKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E2312EB12C6C006100107EA5 /* Starscream */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2312EB02C6C006100107EA5 /* XCRemoteSwiftPackageReference "Starscream" */;
+			productName = Starscream;
+		};
+		E23E0C932C6965C3008FBD3E /* WhisperKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E23E0C922C6965C3008FBD3E /* XCRemoteSwiftPackageReference "whisperkit" */;
+			productName = WhisperKit;
+		};
+		E23E0C962C697733008FBD3E /* SwiftWhisper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E23E0C952C697733008FBD3E /* XCRemoteSwiftPackageReference "SwiftWhisper" */;
+			productName = SwiftWhisper;
+		};
+		E23E0CA32C69B5E8008FBD3E /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E23E0CA22C69B5E8008FBD3E /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E25B2E192C6328330060332E /* Project object */;
 }
