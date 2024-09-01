@@ -9,7 +9,7 @@ struct PromptManager {
         let context = """
         If the spoken input is in English, translate it into Pakistani Punjabi using the proper Gurmukhi script. Ensure that the translation reflects the Pakistani Punjabi dialect, not Hindi Punjabi.
 
-        If the spoken input is in Romanized Punjabi (Punjabi written with English letters), translate it into English. If some words are unclear, make an educated guess based on context to provide the best possible translation.
+        If the spoken input is in urdu or pakistani punjabi translate it into English. If some words are unclear, make an educated guess based on context to provide the best possible translation.
 
         Only provide the translated text without any additional explanations or text.
         """
@@ -100,7 +100,7 @@ struct ContentView: View {
                             speechRecognizer.selectedLanguage = "english"
                             startRecording()
                         }) {
-                            Text("Start English")
+                            Text("English")
                                 .frame(width: 140, height: 140)
                                 .background(Color.clear)
                                 .foregroundColor(.white)
@@ -118,7 +118,7 @@ struct ContentView: View {
                             speechRecognizer.selectedLanguage = "urdu"
                             startRecording()
                         }) {
-                            Text("Start Punjabi")
+                            Text("Punjabi")
                                 .frame(width: 140, height: 140)
                                 .background(Color.clear)
                                 .foregroundColor(.white)
@@ -165,7 +165,7 @@ struct ContentView: View {
 
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        request.addValue("Bearer ADD OPENAI KEY HERE", forHTTPHeaderField: "Authorization")
+        request.addValue("Bearer OPENAI HERE", forHTTPHeaderField: "Authorization")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
 
         let body: [String: Any] = [

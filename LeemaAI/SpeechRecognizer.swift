@@ -6,7 +6,7 @@ import Speech
 
 class SpeechRecognizer: ObservableObject {
     private var audioEngine: AVAudioEngine?
-    private let gladiaKey = "ADD GLADIA HERE"
+    private let gladiaKey = "GLADIA API HERE"
     private var socket: WebSocket?
     @Published var recognizedText = ""
     @Published var isListening = false

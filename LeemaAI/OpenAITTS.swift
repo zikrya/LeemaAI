@@ -3,7 +3,7 @@ import AVFoundation
 
 class OpenAITTS: NSObject, AVAudioPlayerDelegate {
     private enum Constants {
-        static let apiKey = "ADD OPENAI KEY HERE"
+        static let apiKey = "OPENAI HERE"
         static let url = URL(string: "https://api.openai.com/v1/audio/speech")
     }
 
@@ -41,7 +41,6 @@ class OpenAITTS: NSObject, AVAudioPlayerDelegate {
                 return
             }
 
-            // The response is audio data and should be handled as such
             DispatchQueue.main.async {
                 self.playAudio(audioData: data)
             }
